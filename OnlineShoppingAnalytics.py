@@ -10,7 +10,7 @@ import plotly.express as px
 
 #'''Load Data'''
 file_path="online_shopping_analytics.csv"
-if os.path.exist(file_path):
+if os.path.exists(file_path):
     df=pd.read_csv(file_path)
 else:
     st.error(f"File not fount:{file_path}")

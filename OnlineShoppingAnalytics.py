@@ -14,8 +14,6 @@ if os.path.exist(file_path):
     df=pd.read_csv(file_path)
 else:
     st.error(f"File not fount:{file_path}")
-
-# df = pd.read_csv(r"C:\Users\HP\Desktop\vs code coding\.vscode\online_shopping_analytics.csv")
 df["OrderDate"] = pd.to_datetime(df["OrderDate"], errors="coerce")
 
 
